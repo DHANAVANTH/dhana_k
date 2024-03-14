@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Image Background</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+
+    <div class="navbar">
+      <div class="navbar-left">
+ <div class="dhana">
+        Dhana's <span style="color:aqua"> foods</span>
+ </div>
+      </div>
+      <div clas="navbar-right">
+        <a class="a-element">Home</a>
+        <a class="a-element">about</a>
+        <a class="a-element">services</a>
+    
+        <a class="a-element">contact</a>
+      </div>
+      
+    </div>
+
+  
+    <div class="main">
+        <div class="glass">
+          <div>
+            <h5>Biryani items</h5>
+          </div>
+  
+  <div class="food-item">
+		<span>mutton biryani <img src="https://ready2bite.com/cdn/shop/files/mutton-biryani.png?v=1692444657"> </span>
+		<span>Rs. 700.00</span>
+	</div>
+	<div class="food-item">
+		<span>prawn biryani<img src="https://www.tbsnews.net/sites/default/files/styles/infograph/public/images/2022/07/11/prawn_biryani.jpg"></span>
+		<span>Rs. 500.00</span>
+	</div>
+	<div class="food-item">
+		<span>Chicken biryani <img src="https://t3.ftcdn.net/jpg/06/08/84/24/360_F_608842413_hdYadp6uSC7c7pq6LJew9s8gPnRSgjln.jpg"></span>
+		<span>Rs. 300.00</span>
+	</div>
+	<div class="food-item">
+		<span>fry piece biryani <img src="https://ready2bite.com/cdn/shop/files/mutton-biryani.png?v=1692444657"></span>
+		<span>Rs. 200.00</span>
+	</div>
+	<div class="food-item">
+		<span> mixture biryani<img src="https://www.us2guntur.com/images//10071img/FriedPieceChickenBiryani_B_151220.jpg"></span>
+		<span>Rs. 700.00</span>
+	</div>
+
+  <div class="contact">
+    <h1 class="ser-h1">CONTACT US</h1>
+    <div class="contact-info">
+        <p>dhana</p>
+        <p>8688288869</p>
+        <p>dhanavanthka@gmail.com</p>
+    </div>
+    <div class="social-icons"> 
+        <div class="social-icon">
+    <a href="https://www.instagram.com/mr.__.dhana_/">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Instagram_logo_2022.svg/1200px-Instagram_logo_2022.svg.png" class="social-icon-img">
+    </a>
+    <a href="https://www.youtube.com/@dhanakandula7960/">
+        <img src="https://yt3.googleusercontent.com/584JjRp5QMuKbyduM_2k5RlXFqHJtQ0qLIPZpwbUjMJmgzZngHcam5JMuZQxyzGMV5ljwJRl0Q=s900-c-k-c0x00ffffff-no-rj" class="social-icon-img">
+    </a>
+</div>
+</div>
+  </div>
+  </div>
+          
+       <script src="index.js"></script>
+                  
+                  
+     
+	<script>
+		// Add click event listener to each food item
+		var foodItems = document.getElementsByClassName("food-item");
+		for (var i = 0; i < foodItems.length; i++) {
+			foodItems[i].addEventListener("click", function() {
+				alert("You selected " + this.firstElementChild.innerText + " for Rs. " + this.lastElementChild.innerText.replace("Rs.", ""));
+			});
+		}
+	</script>
+ 
+  
+  
+</body>
+</html>
